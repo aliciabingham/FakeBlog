@@ -20,6 +20,6 @@ This exercise will help the students understand the underpinnings of Database de
 
 ### Fake Blog ERD
 
-<img src="img/postAuthorERD.png">
+<img src="postAuthorERD.png">
 
 ## Part 2 - Implement the rest of the features
