@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -19,5 +20,6 @@ namespace FakeBlog.Models
         public string PasswordHash { get; set; }
 
         public ICollection<Post> Posts { get; set; } // 1 to many 
+
     }
 }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace FakeBlog.Models
 {
@@ -10,23 +12,16 @@ namespace FakeBlog.Models
         [Key]
         public int PostId { get; set; }
 
-        [Required] // Cannot be null
+        [Required]
         [MinLength(3)]
-        [MaxLength(60)]
         public string Title { get; set; }
 
         public DateTime DateCreated { get; set; } // Required by default
-
         public DateTime PublishedAt { get; set; }
-
-        [Required]
-        [MinLength(3)]
         public string Body { get; set; }
-
         public bool IsDraft { get; set; }
-
+        public bool Edited { get; set; }
         public string URL { get; set; }
 
-        public bool IsEditted { get; set; }
     }
 }
